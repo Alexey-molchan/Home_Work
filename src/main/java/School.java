@@ -1,12 +1,15 @@
+import java.util.Arrays;
+import java.util.OptionalDouble;
+import java.util.stream.IntStream;
+
 public class School {
+
     public static int getAverage(int[] marks) {
         int average = 0;
-        int count = 0;
-        for (int i = 0; i < marks.length; i++) {
-            average += marks[i];
-            count++;
+        for (int a : marks) {
+            average += a;
         }
-        return average / count;
+        return average / marks.length;
     }
 
 }

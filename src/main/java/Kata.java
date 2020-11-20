@@ -2,7 +2,7 @@ public class Kata {
     public static int squareSum(int[] n) {
         int sum = 0;
         for (int i = 0; i < n.length; i++) {
-            sum = sum + (n[i] * n[i]);
+            sum = (int) (sum + Math.sqrt(n[i]));
         }
         return sum;
     }
