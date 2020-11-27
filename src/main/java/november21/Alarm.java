@@ -1,3 +1,5 @@
+package november21;
+
 public class Alarm {
     public static boolean setAlarm(boolean employed, boolean vacation) {
 
