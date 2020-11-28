@@ -1,5 +1,6 @@
 package november28;
 
+// Не плохо, но через стримы будет проще и короче
 public class Kata {
     public static void main(String[] args) {
         int [] array = {3,1,2,2};

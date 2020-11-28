@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+// Уже проходили
 public class ReversWords {
     public String reverseWords(String str) {
         List<String> wordList = Arrays.asList(str.split(" "));
