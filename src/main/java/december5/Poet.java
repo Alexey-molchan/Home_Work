@@ -38,7 +38,7 @@ public class Poet {
 }
 
 //Scenario
-//        the rhythm of beautiful musical notes is drawing a Pendulum
+//        the rhythm of beautiful musical notes is drawing a Pendulum..
 //
 //        Beautiful musical notes are the Numbers!alt!alt
 //        Task
