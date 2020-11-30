@@ -1,5 +1,6 @@
 package november28;
 
+// Раз мы занимаемся Java, то было бы не плохо сделать эту задачу средствами Java (например Date и SimpleDateFormat)
 public class Clock
 {
     public static int Past(int h, int m, int s) {

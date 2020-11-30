@@ -1,5 +1,6 @@
 package november28;
 
+//Страшновато, кончено. Опять же стримы бы были лучше, но не уверен, что быстрее
 public class Zow {
     public static void main(String[] args) {
         String[] strings = {"sheep", "sheep", "wolf"};
