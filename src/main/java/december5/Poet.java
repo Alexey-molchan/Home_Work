@@ -6,13 +6,24 @@ import java.util.LinkedList;
 
 public class Poet {
     public static void main(String[] args) {
-        final int[] ddd = {7, 4, 3, 2, 1};
+        final int[] ddd = {7, 3, 1, 2, 4};
         pendulum(ddd);
     }
 
     public static int[] pendulum(final int[] values) {
 
-        Arrays.sort(values);
+//        Arrays.sort(values);
+        int [] arr = new int[values.length];
+
+        for (int i = 0; i < values.length; i++){
+            if (arr[values.length / 2] == 0){
+                arr[ values.length / 2] = values[i];
+            } else if (arr[values.length / 2] > values[i]){
+                arr[values.length / 2 - 1] = arr[values.length / 2];
+                arr[values.length / 2] = values[i];
+            }
+
+        }
 
         LinkedList<Integer> list = new LinkedList<>();
 //        String str = "" + values[0];
