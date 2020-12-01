@@ -12,38 +12,19 @@ public class Poet {
 
     public static int[] pendulum(final int[] values) {
 
-//        Arrays.sort(values);
-        int [] arr = new int[values.length];
-
-        for (int i = 0; i < values.length; i++){
-            if (arr[values.length / 2] == 0){
-                arr[ values.length / 2] = values[i];
-            } else if (arr[values.length / 2] > values[i]){
-                arr[values.length / 2 - 1] = arr[values.length / 2];
-                arr[values.length / 2] = values[i];
-            }
-
-        }
+        int[] arr = values;
+        Arrays.sort(values);
 
         LinkedList<Integer> list = new LinkedList<>();
-//        String str = "" + values[0];
 
         for (int i = 0; i < values.length; i++) {
             if (i % 2 == 0) {
-//                str = values[i] + "/" + str;
                 list.addFirst(values[i]);
             } else {
-//                str = str  + "/" + values[i];
                 list.addLast(values[i]);
             }
         }
-//        str.split("/");
-//        int[] numArr = Arrays.stream(str.split("/")).mapToInt(Integer::parseInt).toArray();
-        int[] mass = new int[list.size()];
-        for (int i = 0; i < list.size(); i++) {
-            mass[i] = list.get(i);
-        }
-        return mass;
+        return Arrays.stream(list.toArray()).mapToInt(x -> (int) x).toArray();
 
     }
 }
